@@ -17,7 +17,9 @@
 # 4. (Optional) If you'd like to upload SARIF results of DAST scans to GitHub, set SOOS_GITHUB_PAT with your Github Personal Access Token.
 #
 
-name: "SOOS DAST Scan"
+            name: SOOS DAST
+                uses: soos-io/soos-dast-github-action@v2.0.0
+            
 
 on:
   push:
