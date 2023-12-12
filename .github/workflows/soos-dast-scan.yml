@@ -17,32 +17,25 @@
 # 4. (Optional) If you'd like to upload SARIF results of DAST scans to GitHub, set SOOS_GITHUB_PAT with your Github Personal Access Token.
 #
 
-name: "SOOS DAST Scan"
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
-
+name: SOOS DAST GitHub Actions
+on: [push]
 jobs:
-  soos:
-    permissions:
-      security-events: write # for uploading code scanning alert info
-      actions: read # only required for a private repository by github/codeql-action/upload-sarif to get the Action run status
-    name: SOOS DAST Scan
+  soos_dast_baseline_analysis:
+    name: SOOS DAST Baseline Analysis
     runs-on: ubuntu-latest
     steps:
-      - name: Run SOOS DAST Scan
+      - name: Run SOOS DAST Baseline Analysis
         uses: soos-io/soos-dast-github-action@v2.0.0
         with:
-          client_id: ${{ secrets.SOOS_CLIENT_ID }}
-          api_key: ${{ secrets.SOOS_API_KEY }}
-          project_name: "DAST SCAN TEST"
-          scan_mode: "baseline"
-          target_url: "https://www.example.com/"
-          output_format: "sarif"
-      - name: Upload SOOS DAST SARIF Report
+           client_id: ${{ secrets.SOOS_CLIENT_ID }}
+           api_key: ${{ secrets.SOOS_API_KEY }}
+           project_name: "dast github actions"
+           api_url: "https://qa-api.soos.io/api/"
+           scan_mode: "baseline"
+           target_url: "https://brokencrystals.com/"
+           output_format: "sarif"
+           #on_failure: 'fail_the_build'
+      - name: Upload SOOS DAST Report
         uses: github/codeql-action/upload-sarif@v2
         with:
           sarif_file: results.sarif
