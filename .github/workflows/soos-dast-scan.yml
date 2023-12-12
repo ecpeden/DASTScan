@@ -32,7 +32,7 @@ jobs:
            project_name: "dast github actions"
            api_url: "https://qa-api.soos.io/api/"
            scan_mode: "baseline"
-           target_url: "https://example.com/"
+           target_url: "https://brokencrystals.com/"
            output_format: "sarif"
            #on_failure: 'fail_the_build'
 
