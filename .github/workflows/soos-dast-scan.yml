@@ -41,5 +41,5 @@ jobs:
           project_name: "DAST Scan"
           scan_mode: "baseline"
           target_url: "https://www.example.com/"
-          output_format: "sarif"
+   
 
