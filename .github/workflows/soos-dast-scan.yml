@@ -42,7 +42,4 @@ jobs:
           scan_mode: "baseline"
           target_url: "https://www.example.com/"
           output_format: "sarif"
-      - name: Upload SOOS DAST SARIF Report
-        uses: github/codeql-action/upload-sarif@v2
-        with:
-          sarif_file: results.sarif
+
