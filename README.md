@@ -17,3 +17,5 @@ Delete the directory folder
 
 Delete the workflow
 ![clean up 2](https://github.com/ecpeden/DASTScan/assets/97715068/7a1b4561-faef-491e-b6b5-0c7e8943e266)
+
+test the webhooks by saying something funny here
