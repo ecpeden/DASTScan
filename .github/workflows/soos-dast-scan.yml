@@ -43,7 +43,7 @@ jobs:
           project_name: "dashboard testing broken crystals"
           api_url: "https://qa-api.soos.io/api/"
           scan_mode: "baseline"
-          target_url: "https://www.brokencrystals.com/"
+          target_url: "https://brokencrystals.com/"
           output_format: "sarif"
       - name: Upload SOOS DAST SARIF Report
         uses: github/codeql-action/upload-sarif@v2
