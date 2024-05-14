@@ -43,7 +43,7 @@ jobs:
           api_url: "https://qa-api.soos.io/api/"
           project_name: "dast test two"
           scan_mode: "baseline"
-          target_url: "https://www.juice-shop.com/"
+          target_url: "https://www.brokencrystals.com/"
           output_format: "sarif"
       - name: Upload SOOS DAST SARIF Report
         uses: github/codeql-action/upload-sarif@v3
