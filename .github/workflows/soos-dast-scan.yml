@@ -43,5 +43,5 @@ jobs:
           api_url: "https://qa-api.soos.io/api/"
           project_name: "DAST B"
           scan_mode: "baseline"
-          target_url: "https://example.com/"
+          target_url: "https://www.example.com"
          
