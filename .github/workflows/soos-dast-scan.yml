@@ -43,5 +43,5 @@ jobs:
           api_url: "https://qa-api.soos.io/api/"
           project_name: "Broken Crystals"
           scan_mode: "baseline"
-          target_url: "https://www.brokencrystals.com/"
+          target_url: "https://brokencrystals.com/"
          
