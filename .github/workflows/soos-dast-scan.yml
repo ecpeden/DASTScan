@@ -41,7 +41,7 @@ jobs:
           client_id: ${{ secrets.SOOS_CLIENT_ID }}
           api_key: ${{ secrets.SOOS_API_KEY }}
           api_url: "https://qa-api.soos.io/api/"
-          project_name: "DAST B"
+          project_name: "DAST A"
           scan_mode: "baseline"
           target_url: "https://www.example.com"
          
